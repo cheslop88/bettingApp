@@ -1,0 +1,11 @@
+/* Carousel Styles */
+#banner { 
+  &.item{
+    margin: 3px;
+    img {
+      display: block;
+      width: $max-percent-width;
+      height: auto;
+    }
+  }
+}

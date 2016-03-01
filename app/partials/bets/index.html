@@ -1,0 +1,34 @@
+<h2 ng-hide="dataError === false">We are unable to retrive any data, please try again later</h2>
+<!-- Display all bets partial -->
+<div class="row" ng-hide="dataError === true">
+	<h2>Please choose an event below:</h2>
+	<div class="searchField">
+	  <label for="event">Event:</label>&nbsp;
+	      <select name="event" id="event" ng-model="Query">
+	        <option value="">All Events</option>
+	        <!-- Use the angular filter to remove any duplicate events in dropdown menu -->
+	        <option ng-repeat="bet in bets | unique:'event'" value="{{bet.event}}">{{bet.event}}</option>
+	      </select>
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<th>Event</th>
+				<th>Team</th> 
+				<th>Fraction Odds</th>
+				<th>Decimal Odds</th>
+				<th>Bet Now</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Display all bets in alphabetical order of team/ we want to filter by event if option chosen by user -->
+			<tr ng-repeat="bet in bets | orderBy : 'name' | filter:Query ">
+				<td class="bets">{{bet.event}}</td>
+				<td class="bets">{{bet.name}}</td> 
+				<td class="bets">{{bet.odds.numerator}}/{{bet.odds.denominator}}</td>
+				<td class="bets">{{bet.odds.numerator/bet.odds.denominator | number:2}}</td>
+				<td class="bets"><a class="button bet" href="#/basket/{{bet.bet_id -1}}">Bet</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,28 @@
+<div class="row">
+  <!-- Receipt Partial -->
+  <h2>Placed Bets</h2>
+   <p>Where possible, all withdrawals will be processed to the payment account from which the deposits were made. Withdrawal payments can only be made in the name of and to the registered account holder.</p>
+  <table>
+    <thead>
+    <tr>
+      <th>Event</th>
+      <th>Bet No:</th> 
+      <th>Odds</th>
+      <th>Stake</th>
+      <th>Transaction No:</th>
+      <th>Projected Winnings</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="slip">{{slips.event}}</td>
+        <td class="slip">{{slips.bet_id}}</td> 
+        <td class="slip">{{slips.odds.numerator}}/{{slips.odds.denominator}}</td>
+        <td class="slip">{{slips.stake | currency:'£'}}</td>
+        <td class="slip">{{slips.transaction_id}}</td>
+        <td class="slip">{{((slips.odds.numerator/slips.odds.denominator) * slips.stake) + slips.stake | currency:'£'}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <a class="button" href="#/bets">Back to bets</a>
+</div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+  <html lang="en" ng-app="myApp" class="no-js lt-ie9"> 
+<![endif]-->
+<!--[if gt IE 8]><!-->
+  <html lang="en" ng-app="bettingApp" class="no-js"> 
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bede Casino</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/compiled/min/main.css">
+  <link rel="stylesheet" href="css/plugin/owl.carousel.css">
+</head>
+<body>
+  <!-- Page Container -->
+  <div class="container">
+    <!-- Carousel Banner Directive -->
+    <carousel-content></carousel-content>
+    <!-- Output -->
+    <div ng-view></div>
+  </div>
+  <!-- Scripts-->
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Concatenated main js file -->
+  <script src="js/main.js"></script>
+  <!--<script src="js/main.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.min.js"></script>
+  <script src="js/plugin/owl.carousel.min.js"></script>
+</body>
+</html>

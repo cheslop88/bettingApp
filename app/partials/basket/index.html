@@ -1,0 +1,33 @@
+<div class="row">
+    <!-- Individual Bet/Place Stake partial -->
+    <!-- Display if bet was successful or not-->
+    <bet-failure ng-show="betPlaced == false"></bet-failure>
+    <bet-success ng-show="betPlaced === true"></bet-success>
+    <table ng-hide="betPlaced === true">
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Team</th> 
+          <th>Fraction Odds</th>
+          <th>Decimal Odds</th>
+          <th>Stake</th>
+          <th>Returns</th>
+          <th>Agreement</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="basket">{{bet.event}}</td>
+            <td class="basket">{{bet.name}}</td> 
+            <td class="basket">{{bet.odds.numerator}}/{{bet.odds.denominator}}</td>
+            <td class="basket">{{bet.odds.numerator/bet.odds.denominator | number:2}}</td>
+            <td class="basket">&pound;<input type="number" ng-model="stake" value="0.00" name="stake"/></td>
+            <td class="basket">{{((bet.odds.numerator/bet.odds.denominator) * stake) + stake | currency:'£'}}</td>
+            <td class="basket"><input type="checkbox" ng-model="user.agree" name="userAgree" required="" />&nbsp;I confirm I am over 18 years of age and of legal capacity to place a bet/wager</td>
+            <td ng-hide="!user.agree || !stake">
+                  <a class="button" ng-click="save()">Place Bet<a> 
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
