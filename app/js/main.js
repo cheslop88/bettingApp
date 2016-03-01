@@ -9,7 +9,7 @@ var betPlaced = false;
 angular.module('bettingApp')
   .factory('getBets', ['$http', '$q', function($http, $q) {
   //Retrieve the data via a factory
-  return $http.get('https://bedefetechtest.herokuapp.com/v1/market').then(function(resp) {
+  return $http.get('https://bedefetechtest.herokuapp.com/v1/markets').then(function(resp) {
   //Return the response
   return resp.data;
   });
