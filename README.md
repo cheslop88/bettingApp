@@ -3,7 +3,7 @@
 2. Please perform 'npm install' to gather all packages required
 3. Upon completion please run 'npm start'
 4. Page should be accessible at 'http://localhost:8000/app/#/'
-5. 5. This should redirect you to the homepage 'http://localhost:8000/app/#/bets'
+5. This should redirect you to the homepage 'http://localhost:8000/app/#/bets'
 
 
 To use the app:
