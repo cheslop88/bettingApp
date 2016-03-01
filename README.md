@@ -15,4 +15,4 @@ To use the app:
 5. User will see a success/failure message based upon the outcome
 6. User can view their bet receipt upon success
 7. User can revisit betting slip if bet fails to process - usually incorrect stake inserted
-8. Once bet is placed user can return to http://localhost:8000/app/#/slip to view last bet placed.
+8. Once bet is placed user can view their bet receipt by following the relevant link
