@@ -11,7 +11,7 @@ To use the app:
 1. User can view all available bets incl. odds both in fractional and decimal form
 2. User can choose to 'Bet' on desired event/team
 3. User can input a live stake into input box and view relevant returns - user must also accept terms to proceed
-4. User can then click 'Place Bet' to placed desired bet
+4. User can then click 'Place Bet' to place desired bet
 5. User will see a success/failure message based upon the outcome
 6. User can view their bet receipt upon success
 7. User can revisit betting slip if bet fails to process - usually incorrect stake inserted
