@@ -3,7 +3,6 @@
   'use strict';
   // Declare app level module which depends on views, and components
 angular.module('bettingApp', ['ngRoute', 'angular.filter']);
-var betPlaced = false;
 })();
 
 angular.module('bettingApp')
@@ -15,7 +14,7 @@ angular.module('bettingApp')
   });
 }]);
 angular.module('bettingApp')
-    .config(['$routeProvider', function($routeProvider) {
+    .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 	/* Main bet page */
 	.when('/bets', {
@@ -34,6 +33,8 @@ angular.module('bettingApp')
 	})
 	/* Anything else return home to main bet page */
 	.otherwise({redirectTo: '/bets'});
+	// use the HTML5 History API
+  $locationProvider.html5Mode(true);
 }]);
 angular.module('bettingApp')
   /* Pass in the dependencies incl. the getBets factory */
