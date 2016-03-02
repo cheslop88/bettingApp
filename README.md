@@ -16,3 +16,5 @@ To use the app:
 6. User can view their bet receipt upon success
 7. User can revisit betting slip if bet fails to process - usually incorrect stake inserted
 8. Once bet is placed user can view their bet receipt by following the relevant link
+
+Note: App is responsive
