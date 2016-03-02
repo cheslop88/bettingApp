@@ -27,7 +27,7 @@
 				<td class="bets">{{bet.name}}</td> 
 				<td class="bets">{{bet.odds.numerator}}/{{bet.odds.denominator}}</td>
 				<td class="bets">{{bet.odds.numerator/bet.odds.denominator | number:2}}</td>
-				<td class="bets"><a class="button bet" href="#/basket/{{bet.bet_id -1}}">Bet</a></td>
+				<td class="bets"><a class="button bet" href="basket/{{bet.bet_id -1}}">Bet</a></td>
 			</tr>
 		</tbody>
 	</table>
