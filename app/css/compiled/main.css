@@ -35,7 +35,6 @@ input.ng-valid.ng-touched {
 a.button {
   background-color: #d91423;
   border-radius: 10px;
-  font-color: #9d9d9d;
   padding: 10px;
   margin: 10px 0;
   text-decoration: none;
@@ -45,8 +44,7 @@ a.button {
   box-shadow: 0 10px 10px rgba(0, 40, 100, 0.15);
   text-align: center; }
   a.button:hover {
-    background-color: #d91423;
-    color: #FFFFFF;
+    background-color: #cc0000;
     cursor: pointer; }
 
 /* Table Styles */
