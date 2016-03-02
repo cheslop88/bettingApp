@@ -1,5 +1,5 @@
 angular.module('bettingApp')
-    .config(['$routeProvider', function($routeProvider) {
+    .config(['$routeProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 	/* Main bet page */
 	.when('/bets', {
@@ -18,4 +18,6 @@ angular.module('bettingApp')
 	})
 	/* Anything else return home to main bet page */
 	.otherwise({redirectTo: '/bets'});
+	// use the HTML5 History API
+        $locationProvider.html5Mode(true);
 }]);
