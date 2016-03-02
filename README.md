@@ -3,7 +3,7 @@
 2. Please perform 'npm install' to gather all packages required
 3. Upon completion please run 'npm start'
 4. Page should be accessible at 'http://localhost:8000/app/'
-5. This should redirect you to the homepage 'http://localhost:8000/app/bets' - Please note HTML5 location provider is triggered in this app.
+5. This should redirect you to the homepage 'http://localhost:8000/app/bets' - Please note HTML5 location provider is triggered in this app - links are only accessible within the designated points of the app and not via the url.
 
 
 To use the app:
