@@ -41,9 +41,8 @@ input {
 
 a{
   &.button {
-    background-color: #d91423;
+    background-color: $button-red;
     border-radius: 10px;
-    font-color: #9d9d9d;
     padding: 10px;
     margin: 10px 0;
     text-decoration: none;
@@ -53,8 +52,7 @@ a{
     box-shadow: 0 10px 10px rgba(0,40,100,0.15);
     text-align: center;
     &:hover{
-       background-color: #d91423;
-       color: $white;
+       background-color: $hover-red;
        cursor: pointer;
     }
   }
